@@ -1,0 +1,207 @@
+﻿@model IEnumerable<WebApplication3.Models.Motorista>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<!-- VERSÃO FINAL DO ARQUIVO -->
+<!-- Início Menu -->
+    <header class="controle">
+        <nav class="navbar-expand-xl navbar-dark fixed-top mynav">
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+
+          <div class="logo">
+            <img src="imgs/AcessiCARlogo2transp.png" width="20%" height="20%">
+            AcessiCAR
+          </div>
+
+          <div class="menu">
+            <ul>
+             <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+              <li><a asp-area="" asp-controller="Home" asp-action="Sobre">Sobre</a></li>
+              <li><a asp-area="" asp-controller="Passageiroes" asp-action="Create">Passageiro</a></li>
+              <li><a asp-area="" asp-controller="Motorista" asp-action="Index">Motorista</a></li>
+              <li><a asp-area="" asp-controller="Contatoes" asp-action="Create">Contato</a></li>
+              <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a></li>
+
+            </ul>
+          </div>
+        </nav>
+    </header>
+<!-- Fim Menu -->
+
+<!-- Front Front Milena -->
+<div class="container-fluid">
+
+	<!-- jumbotron Cabeçalho-->
+  <div class="jumbotron jumbotron-with-background6 text-light bg-secondary">
+    <h1 class="display-4">Motoristas Parceiros</h1>
+    <p class="lead">Transforme a mobilidade do seu dia.</p>
+  </div>
+
+  <!-- Fim jumbotron Cabeçalho -->
+
+		<div class="card-deck">
+			<table width="100%" border="0" cellpadding="30px" =>
+				<tr rowspan="5" width="20%" vertical-align="top"
+
+
+				<tr>
+					<td width="20%" align="center" vertical-align="bottom">
+						<div class="card" style="width: 18rem;">
+							<img src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=344&q=80" class="card-img-top" alt="..." width="300px" height="400px">
+							<div class="card-body">
+								<h5 class="card-title">
+									Gustavo Carvalho
+								</h5>
+								<p class="card-text">
+									ID: 123456 <br>Telefone: 99999-9999
+								</p>
+								<a href="#" class="btn btn-primary">Contratar</a>
+							</div>
+						</div>
+					</td>
+
+					<td width="20%" align="center" vertical-align="bottom">
+						<div class="card" style="width: 18rem;">
+							<img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGhvdG8lMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="..." width="300px" height="400px">
+							<div class="card-body">
+								<h5 class="card-title">
+									Mário de Souza
+								</h5>
+								<p class="card-text">
+									ID: 123456 <br>Telefone: 99999-9999
+								</p>
+								<a href="#" class="btn btn-primary">Contratar</a>
+							</div>
+						</div>
+					</td>
+
+					<td width="20%" align="center" vertical-align="bottom">
+						<div class="card" style="width: 18rem;">
+							<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBob3RvJTIwcHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="..." width="300px" height="400px">
+							<div class="card-body">
+								<h5 class="card-title">
+									Mônica Martins
+								</h5>
+								<p class="card-text">
+									ID: 123456 <br>Telefone: 99999-9999
+								</p>
+								<a href="#" class="btn btn-primary">Contratar</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td width="20%" align="center" vertical-align="bottom">
+						<div class="card" style="width: 18rem;">
+							<img src="https://images.unsplash.com/photo-1625426193702-15200f5c008f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fHBob3RvJTIwcHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="..." width="300px" height="400px">
+							<div class="card-body">
+								<h5 class="card-title">
+									Leonardo Andrade
+								</h5>
+								<p class="card-text">
+									ID: 123456 <br>Telefone: 99999-9999
+								</p>
+								<a href="#" class="btn btn-primary">Contratar</a>
+							</div>
+						</div>
+					</td>
+
+					<td width="20%" align="center" vertical-align="bottom">
+						<div class="card" style="width: 18rem;">
+							<img src="https://images.unsplash.com/photo-1621352152645-61f4835b081b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBob3RvJTIwcHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="..." width="300px" height="400px">
+							<div class="card-body">
+								<h5 class="card-title">
+									Luiz Sobral
+								</h5>
+								<p class="card-text">
+									ID: 123456 <br>Telefone: 99999-9999
+								</p>
+								<a href="#" class="btn btn-primary">Contratar</a>
+							</div>
+						</div>
+					</td>
+
+					<td width="20%" align="center" vertical-align="bottom">
+						<div class="card" style="width: 18rem;">
+							<img src="https://images.unsplash.com/photo-1610388565477-5b9a3528c776?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE4fHxwaG90byUyMHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="..." width="300px" height="400px">
+							<div class="card-body">
+								<h5 class="card-title">
+									Wagner Moura
+								</h5>
+								<p class="card-text">
+									ID: 123456 <br>Telefone: 99999-9999
+								</p>
+								<a href="#" class="btn btn-primary">Contratar</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+
+<!-- Fim Front Milena -->
+
+
+<p>
+    <a asp-action="Create"><h4>Seja um motorista Parceiro!</h4></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cnh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpf)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cnh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cpf)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

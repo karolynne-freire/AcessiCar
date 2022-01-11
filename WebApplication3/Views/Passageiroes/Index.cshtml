@@ -1,0 +1,86 @@
+﻿@model IEnumerable<WebApplication3.Models.Passageiro>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<!-- VERSÃO FINAL DO ARQUIVO -->
+ <!-- Início Menu -->
+    <header class="controle">
+        <nav class="navbar-expand-xl navbar-dark fixed-top mynav">
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+
+          <div class="logo">
+            <img src="imgs/AcessiCARlogo2transp.png" width="20%" height="20%">
+            AcessiCAR
+          </div>
+
+          <div class="menu">
+            <ul>
+               <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+              <li><a asp-area="" asp-controller="Home" asp-action="Sobre">Sobre</a></li>
+              <li><a asp-area="" asp-controller="Passageiroes" asp-action="Create">Passageiro</a></li>
+              <li><a asp-area="" asp-controller="Motorista" asp-action="Index">Motorista</a></li>
+              <li><a asp-area="" asp-controller="Contatoes" asp-action="Create">Contato</a></li>
+              <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a></li>
+
+            </ul>
+          </div>
+        </nav>
+    </header>
+<!-- Fim Menu -->
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create"><h4>Criar Novo Contato</h4></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpf)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cpf)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
