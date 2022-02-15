@@ -32,7 +32,7 @@ headerindexsobre {
     line-height: 60px;
     position: fixed;
     float: left;
-    margin: 16px 46px;
+    margin: 16px 30px;
     color: #FFFEA3;
     font-weight: bold;
     font-size: 20px;
@@ -57,7 +57,7 @@ nav ul {
     text-align: right;
     margin: 0;
     padding-right: 40px;
-    transition: 3s;
+    transition: 5s;
 }
 
 nav.black ul {
@@ -106,7 +106,7 @@ nav a:hover {
     position: absolute;
 }
 
-@media(max-width: 786px) {
+@media(max-width: 900px) {
 
     .logo {
           position: fixed;
@@ -124,13 +124,13 @@ nav a:hover {
     }
 
     .showing {
-          max-height: 34em;
+          max-height: 60em;
     }
 
     nav ul li {
           box-sizing: border-box;
           width: 100%;
-          padding: 24px;
+          padding: 10px;
           text-align: center;
     }
 
@@ -252,3 +252,14 @@ nav a:hover {
 .bgcontaineracesso {
     background-color: rgb(20, 29, 63);
 }
+
+
+.divbreak {
+    display: inline;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-x:scroll;
+    
+}
+
+

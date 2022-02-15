@@ -5,8 +5,12 @@
 }
 
 <!-- VERSÃO FINAL DO ARQUIVO -->
-<header class="headerindexsobre">
-  <!-- Início Menu -->
+<!-- jumbotron Cabeçalho-->
+  <div class="jumbotron jumbotron-with-background text-light bg-secondary">
+
+
+      <!-- Início Menu -->
+  <header class="controle">
         <nav class="navbar-expand-xl navbar-dark fixed-top mynav">
           <div class="menu-icon">
             <i class="fa fa-bars fa-2x"></i>
@@ -18,27 +22,37 @@
           </div>
 
           <div class="menu">
-            <ul>
-              <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-              <li><a asp-area="" asp-controller="Home" asp-action="Sobre">Sobre</a></li>
-              <li><a asp-area="" asp-controller="Passageiroes" asp-action="Create">Passageiro</a></li>
-              <li><a asp-area="" asp-controller="Motorista" asp-action="Index">Motorista</a></li>
-              <li><a asp-area="" asp-controller="Contatoes" asp-action="Create">Contato</a></li>
-              <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a></li>
+            <ul> <li>Acessibilidade: &nbsp;&nbsp;  
+                 <a href="#" onclick="diminuir()">  A- |</a> 
+                 <a href="#" onclick="aumentar()">  A+ |</a>
+                <ion-icon name="contrast-outline" onclick="pretoebranco()" class="iconcursor"></ion-icon></li>
+              
+
+
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Sobre">Sobre</a></li>
+                <li><a asp-area="" asp-controller="Passageiroes" asp-action="Create">Passageiro</a></li>
+                <li><a asp-area="" asp-controller="Motorista" asp-action="Index">Motorista</a></li>
+                <li><a asp-area="" asp-controller="Contatoes" asp-action="Create">Contato</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a></li>
+               
 
             </ul>
           </div>
         </nav>
+</header>
 <!-- Fim Menu -->
 
-  <!-- Início jumbotron -->
-
-  <div class="jumbotron jumbotron-with-background text-light bg-secondary">
+    <br><br>
     <h1 class="display-4">Quem somos</h1>
+    
     <p class="lead">Uma empresa inovadora em transportes acessíveis</p>
-
   </div>
-  <!-- Fim jumbotron -->
+
+ 
+  <!-- Início Container -->
+
+
   <div class="container">
     <div>
       <h2>AcessiCAR veículos acessíveis</h2>

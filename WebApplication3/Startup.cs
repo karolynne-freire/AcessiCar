@@ -26,7 +26,7 @@ namespace WebApplication3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<Contexto>(options => options.UseSqlServer(@"Server=tcp:acessicar-dbdbserver.database.windows.net,1433;Initial Catalog=AcessiCAR_DB;Persist Security Info=False;User ID=Vanessa;Password=dilandau@1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
+            services.AddDbContext<Contexto>(options => options.UseSqlServer(@"Data Source=DESKTOP-L25VKLC;Initial Catalog=AtividadeGrupo;Integrated Security=True"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

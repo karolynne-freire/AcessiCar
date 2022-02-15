@@ -4,8 +4,12 @@
     ViewData["Title"] = "Passageiro";
 }
 
-<!-- Início Menu -->
-    <header class="controle">
+<!-- jumbotron Cabeçalho-->
+  <div class="jumbotron jumbotron-with-background7 text-light bg-secondary">
+
+
+      <!-- Início Menu -->
+  <header class="controle">
         <nav class="navbar-expand-xl navbar-dark fixed-top mynav">
           <div class="menu-icon">
             <i class="fa fa-bars fa-2x"></i>
@@ -17,24 +21,31 @@
           </div>
 
           <div class="menu">
-            <ul>
-             <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-              <li><a asp-area="" asp-controller="Home" asp-action="Sobre">Sobre</a></li>
-              <li><a asp-area="" asp-controller="Passageiroes" asp-action="Create">Passageiro</a></li>
-              <li><a asp-area="" asp-controller="Motorista" asp-action="Index">Motorista</a></li>
-              <li><a asp-area="" asp-controller="Contatoes" asp-action="Create">Contato</a></li>
-              <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a></li>
+             <ul> <li>Acessibilidade: &nbsp;&nbsp;  
+                 <a href="#" onclick="diminuir()">  A- |</a> 
+                 <a href="#" onclick="aumentar()">  A+ |</a>
+                <ion-icon name="contrast-outline" onclick="pretoebranco()" class="iconcursor"></ion-icon></li>
+              
+
+
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Sobre">Sobre</a></li>
+                <li><a asp-area="" asp-controller="Passageiroes" asp-action="Create">Passageiro</a></li>
+                <li><a asp-area="" asp-controller="Motorista" asp-action="Index">Motorista</a></li>
+                <li><a asp-area="" asp-controller="Contatoes" asp-action="Create">Contato</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a></li>
+               
 
             </ul>
           </div>
         </nav>
-    </header>
+</header>
 <!-- Fim Menu -->
 
-	<!-- jumbotron Cabeçalho-->
-  <div class="jumbotron jumbotron-with-background7 text-light bg-secondary">
-    <h1 class="display-4">Faça seu cadastro e viaje com a ACessiCAR</h1>
-    <p class="lead">Transforme a mobilidade do seu dia.</p>
+    <br><br>
+    <h1 class="display-4">Cadastre-se</h1>
+    
+    <p class="lead">Faça seu cadastro e viaje com a AcessiCAR</p>
   </div>
 
   <!-- Fim jumbotron Cabeçalho -->
@@ -89,6 +100,10 @@
     </div>
 </div>
  </div>
+
+   <p>
+    <center><a asp-action="Index" class="btn btn-outline-primary w-30 my-1">Cadastros</a></center>
+    </p>
 
 
 @section Scripts {
