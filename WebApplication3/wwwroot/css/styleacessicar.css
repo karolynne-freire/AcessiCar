@@ -32,12 +32,15 @@ headerindexsobre {
     line-height: 60px;
     position: fixed;
     float: left;
-    margin: 16px 30px;
+    margin: 15px 5px;
     color: #FFFEA3;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 295px;
+    padding-right: 0px;
+    padding-left: 15px;
 }
 
 
